@@ -1,0 +1,29 @@
+.swiper {
+	position: relative;
+}
+
+.swiper-button-next {
+	position: absolute;
+	top: 97%;
+	right: 2.5%;
+	&::after {
+		content: url("../img/right.svg");
+	}
+}
+
+
+.swiper-button-prev {
+	position: absolute;
+	top: 97%;
+	left: 87%;
+	&::after {
+		content: url("../img/right.svg");
+		transform: scale(-1, 1)
+	}
+}
+
+.swiper-button-prev .swiper-button-disabled{
+	&::after{
+		width: 40px;
+	}
+}
